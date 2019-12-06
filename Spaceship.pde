@@ -5,15 +5,17 @@ class Spaceship extends Floater
     xCorners= new int[]{-8, -2, -8, 16};
     yCorners= new int[]{-8, 0, 8, 0};
     myColor=255;
-    myCenterX=0;
-    myCenterY=0;
+    myCenterX=400;
+    myCenterY=400;
     myDirectionX=0;
     myDirectionY=0;
+    myPointDirection = (int)(Math.random() * 350);
   }
-  void move() {
-    
-  }
-  void show() {
-      
+  void Hyperspace() {
+    myCenterX = (int)(Math.random()*800);
+    myCenterY = (int)(Math.random()*800);
+    myDirectionX=0;
+    myDirectionY=0;
+    myPointDirection = (int)(Math.random() * 350);
   }
 }
